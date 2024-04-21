@@ -2,7 +2,7 @@ var INVALID_ARGUMENTS = 'The arguments were not valid';
 var NOT_A_TRIANGLE = 'Impossible to create a triangle with those sides';
 var EQUILATERAL = 'Equilateral triangle';
 var ISOSCELES = 'Isosceles triangle';
-var SCALENE = 'Scalene triangle;
+var SCALENE = 'Scalene triangle';
 
 /*
  * Given the three sides of a triangle it calculates the type of the
