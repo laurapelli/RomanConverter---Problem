@@ -35,7 +35,6 @@ function init() {
     } else {
       alert(convertion.message);
     }
-    gtag('event', 'roman-converted');
   });
 
 }
