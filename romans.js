@@ -35,6 +35,11 @@ function init() {
     } else {
       alert(convertion.message);
     }
+
+    gtag('event', 'roman-converted', {
+            'event_category': 'Conversion',
+            'event_label': 'Roman to Integer'
+        });
   });
 
 }
