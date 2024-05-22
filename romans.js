@@ -37,7 +37,7 @@ function init() {
     }
 
     gtag('event', 'roman-converted', {
-            'RomanNumber': conversion
+            'event_category': convertion
         });
   });
 
