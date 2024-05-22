@@ -37,8 +37,7 @@ function init() {
     }
 
     gtag('event', 'roman-converted', {
-            'event_category': 'Conversion',
-            'event_label': 'Roman to Integer'
+            'RomanNumber': conversion
         });
   });
 
