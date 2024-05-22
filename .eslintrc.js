@@ -29,5 +29,9 @@ module.exports = {
             "error",
             "always"
         ]
-    }
+    },
+        "globals":{
+            "gtag": "readonly"
+        }
+                
 };
