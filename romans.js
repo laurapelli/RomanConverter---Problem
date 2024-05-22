@@ -35,10 +35,6 @@ function init() {
     } else {
       alert(convertion.message);
     }
-
-    gtag('event', 'roman-converted', {
-            'event_category': convertion
-        });
   });
 
 }
@@ -68,6 +64,11 @@ const convertRomanToInteger = function(roman) {
   // Either the string is not a valid roman number or is empty
   if (!regexResult || roman.length <= 0) {
     response.message = INVALID_ROMAN;
+
+    gtag('event', 'roman-converted', {
+      'event_category': response
+    });
+    
     return response;
   }
 
