@@ -97,11 +97,10 @@ const convertRomanToInteger = function(roman) {
   response.value = sum;
   response.result = true;
   
-    gtag('event', 'roman-converted', {
-      'romanNumber': response
-    });
+  gtag('event', 'roman-converted', {
+    'romanNumber': response
+  });
 
-  
   return response;
 };
 
