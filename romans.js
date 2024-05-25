@@ -65,10 +65,6 @@ const convertRomanToInteger = function(roman) {
   if (!regexResult || roman.length <= 0) {
     response.message = INVALID_ROMAN;
 
-    gtag('event', 'roman-converted', {
-      'romanNumeralRegex': response
-    });
-    
     return response;
   }
 
@@ -100,7 +96,12 @@ const convertRomanToInteger = function(roman) {
 
   response.value = sum;
   response.result = true;
+  
+    gtag('event', 'roman-converted', {
+      'romanNumber': response
+    });
 
+  
   return response;
 };
 
