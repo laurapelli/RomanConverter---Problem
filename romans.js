@@ -66,7 +66,7 @@ const convertRomanToInteger = function(roman) {
     response.message = INVALID_ROMAN;
 
     gtag('event', 'roman-converted', {
-      'event_category': response
+      'romanNumeralRegex': response
     });
     
     return response;
